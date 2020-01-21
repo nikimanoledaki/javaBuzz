@@ -35,8 +35,17 @@ describe("Javabuzz", function() {
   });
 
   describe('when playing, says', function() {
-    it('"Java" when a number is divisible by 3', function() {
-      expect(javabuzz.says(3)).toEqual("Java");
+
+    it('"Fizz" when a number is divisible by 3', function() {
+      expect(javabuzz.says(3)).toEqual("Fizz");
+    });
+
+    it('"Buzz" when a number is divisible by 5', function() {
+      expect(javabuzz.says(5)).toEqual("Buzz");
+    });
+
+    it('"Fizzbuzz" when a number is divisible by 5', function() {
+      expect(javabuzz.says(15)).toEqual("Fizzbuzz");
     });
   });
 });
